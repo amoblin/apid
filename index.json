@@ -55,5 +55,16 @@
             "image" : "images"
         },
         "layout" : "app_store"
+    },
+    {
+        "title" : "v2ex最新主题",
+        "url" : "https:\/\/www.v2ex.com\/api\/topics\/latest.json",
+        "content_mapping" : {
+            "title" : "title",
+            "image" : "member.avatar_normal",
+            "subtitle" : "content",
+
+        },
+        "layout" : "app_store"
     }]
 }
