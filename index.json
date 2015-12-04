@@ -66,5 +66,16 @@
 
         },
         "layout" : "app_store"
+    },
+    {
+        "title" : "GitHub trending",
+        "url" : "http:\/\/trending.codehub-app.com\/v2\/trending?since=daily",
+        "content_mapping" : {
+            "title" : "full_name",
+            "image" : "owner.avatar_url",
+            "subtitle" : "description",
+
+        },
+        "layout" : "app_store"
     }]
 }
