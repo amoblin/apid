@@ -31,6 +31,7 @@
     {
         "title" : "大麦",
         "url" : "http:\/\/mapi.damai.cn\/ProjLst.aspx?cc=0&cityid=852&EndTime=2016-12-03&mc=2&ot=0&p=2&ps=20&source=10099&StartTime=2015-12-03&version=50200",
+        "layout" : "app_store",
         "content_mapping" : {
             "title" : "n",
             "subtitle" : "VenName"
@@ -39,6 +40,7 @@
     {
         "title" : "六只脚",
         "url" : "http:\/\/www.foooooot.com\/client2\/trip\/selected\/",
+        "layout" : "app_store",
         "content_mapping" : {
             "title" : "name",
             "subtitle" : "difficulty",
@@ -51,6 +53,7 @@
         "content_mapping" : {
             "title" : "title",
             "image" : "images"
-        }
+        },
+        "layout" : "app_store"
     }]
 }
