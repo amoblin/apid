@@ -3,6 +3,7 @@
     "created_at": "2015-12-04 07:35:05",
     "author": "amoblin",
     "description": "",
+    "mpi_style": "only_title",
     "apis": [{
         "method" : "GET",
         "url_params" : "",
