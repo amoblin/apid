@@ -35,6 +35,7 @@
             "image" : "avatar_url"
         },
         "title" : "GitHub",
+        "value_path" : "items",
         "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
         "layout" : "app_store"
     },
@@ -42,6 +43,7 @@
         "title" : "大麦",
         "url" : "http://mapi.damai.cn/ProjLst.aspx?cc=0&cityid=852&EndTime=2016-12-03&mc=2&ot=0&p=2&ps=20&source=10099&StartTime=2015-12-03&version=50200",
         "layout" : "app_store",
+        "value_path" : "l",
         "content_mapping" : {
             "title" : "n",
             "subtitle" : "VenName"
@@ -67,6 +69,7 @@
             "title" : "title",
             "image" : "images"
         },
+        "value_path" : "stories",
         "layout" : "app_store"
     },
     {
