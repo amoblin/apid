@@ -45,6 +45,8 @@
         "content_mapping" : {
             "title" : "name",
             "subtitle" : "difficulty",
+            "altitude": "elevation_max",
+            "distance": "distance",
             "image" : "img_url"
         },
         "value_path": "data.route"
