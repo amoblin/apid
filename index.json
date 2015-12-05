@@ -5,22 +5,30 @@
     "description": "",
     "mpi_style": "only_title",
     "apis": [{
+        "id": "huaban_index",
         "method" : "GET",
         "url_params" : "",
         "body_type" : "",
-        "layout" : "app_store",
+        "layout_" : "app_store",
+        "layout" : "only_image",
         "content_mapping" : {
             "title" : "name",
-            "image" : "cover.key",
+            "image" : "file.key",
             "subtitle" : "description"
+        },
+        "action": {
+            "to": "huaban_detail"
         },
         "title" : "花瓣网",
         "body_params" : "",
-        "host" : "http://api.huaban.com",
-        "value_path" : "",
+        "host" : "http://api.huaban.com/favorite/beauty",
+        "value_path" : "pins",
         "path" : "/"
-    },
-    {
+    }, {
+        "id": "huaban_detail",
+        "method": "GET",
+        "host": "http://api.huaban.com"
+    }, {
         "content_mapping" : {
             "title" : "login",
             "image" : "avatar_url"
@@ -66,8 +74,7 @@
         "content_mapping" : {
             "title" : "title",
             "image" : "member.avatar_normal",
-            "subtitle" : "content",
-
+            "subtitle" : "content"
         },
         "layout" : "app_store"
     },
@@ -77,8 +84,7 @@
         "content_mapping" : {
             "title" : "full_name",
             "image" : "owner.avatar_url",
-            "subtitle" : "description",
-
+            "subtitle" : "description"
         },
         "layout" : "app_store"
     }]
