@@ -46,7 +46,8 @@
             "title" : "name",
             "subtitle" : "difficulty",
             "image" : "cover_image"
-        }
+        },
+        "value_path": "data.route"
     },
     {
         "title" : "知乎日报",
