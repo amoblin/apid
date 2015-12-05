@@ -6,6 +6,7 @@
     "mpi_style": "only_title",
     "value_path": "apis",
     "apis": [{
+        "title" : "花瓣网",
         "id": "huaban_index",
         "method" : "GET",
         "url_params" : "",
@@ -20,21 +21,21 @@
         "action": {
             "to": "huaban_detail"
         },
-        "title" : "花瓣网",
         "body_params" : "",
         "host" : "http://api.huaban.com/favorite/beauty",
         "value_path" : "pins",
         "path" : "/"
     }, {
+        "title": "花瓣",
         "id": "huaban_detail",
         "method": "GET",
         "host": "http://api.huaban.com"
     }, {
+        "title" : "GitHub",
         "content_mapping" : {
             "title" : "login",
             "image" : "avatar_url"
         },
-        "title" : "GitHub",
         "value_path" : "items",
         "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
         "layout" : "app_store"
@@ -48,8 +49,7 @@
             "title" : "n",
             "subtitle" : "VenName"
         }
-    },
-    {
+    },{
         "title" : "六只脚",
         "url" : "http://www.foooooot.com/client2/trip/selected/",
         "layout" : "landscape",
@@ -61,8 +61,7 @@
             "image" : "img_url"
         },
         "value_path": "data.route"
-    },
-    {
+    },{
         "title" : "知乎日报",
         "url" : "http://news-at.zhihu.com/api/4/news/latest",
         "content_mapping" : {
@@ -71,8 +70,7 @@
         },
         "value_path" : "stories",
         "layout" : "app_store"
-    },
-    {
+    },{
         "title" : "v2ex最新主题",
         "url" : "https://www.v2ex.com/api/topics/latest.json",
         "content_mapping" : {
@@ -81,8 +79,7 @@
             "subtitle" : "content"
         },
         "layout" : "app_store"
-    },
-    {
+    },{
         "title" : "GitHub trending",
         "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
         "content_mapping" : {
