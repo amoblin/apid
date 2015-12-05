@@ -4,6 +4,7 @@
     "author": "amoblin",
     "description": "",
     "mpi_style": "only_title",
+    "value_path": "apis",
     "apis": [{
         "id": "huaban_index",
         "method" : "GET",
