@@ -41,7 +41,7 @@
     {
         "title" : "六只脚",
         "url" : "http:\/\/www.foooooot.com\/client2\/trip\/selected\/",
-        "layout" : "app_store",
+        "layout" : "landscape",
         "content_mapping" : {
             "title" : "name",
             "subtitle" : "difficulty",
