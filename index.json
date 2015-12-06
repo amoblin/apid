@@ -4,8 +4,14 @@
     "author": "amoblin",
     "description": "APID feed",
 
-    "layout": "only_title",
+    "title": "APID",
     "value_path": "apis",
+    "layout": "app_store",
+    "content_mapping": {
+        "title": "title",
+        "subtitle": "subtitle",
+        "image": "icon",
+    },
     "apis": [{
         "title" : "花瓣网",
         "id": "huaban_index",
@@ -14,6 +20,8 @@
         "url_params" : "",
         "body_type" : "",
         "body_params" : "",
+        "icon": "http://hbfile.b0.upaiyun.com/img/about/brand/webicon/files/HuabanWebIcon_64px.png",
+
         "value_path" : "pins",
         "layout_" : "app_store",
         "layout" : "only_image",
