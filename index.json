@@ -94,7 +94,8 @@
         "id": "zhihu_detail",
         "layout": "webpage",
         "content_mapping": {
-            "html": "body"
+            "html": "body",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
     },{
         "title" : "v2ex最新主题",
