@@ -92,7 +92,10 @@
             "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
         },
         "id": "zhihu_detail",
-        "layout": "app_store"
+        "layout": "webpage",
+        "content_mapping": {
+            "html": "body"
+        }
     },{
         "title" : "v2ex最新主题",
         "url" : "https://www.v2ex.com/api/topics/latest.json",
