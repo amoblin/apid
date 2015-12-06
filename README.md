@@ -9,3 +9,7 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 -->
 
 API data for mpi
+
+# API文档
+
+- [知乎日报 API 分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/知乎日报-API-分析)

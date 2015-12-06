@@ -80,7 +80,15 @@
         "content_mapping" : {
             "title" : "title",
             "image" : "images"
-        }
+        },
+        "item_action": "zhihu_detail"
+    },{
+        "title": "知乎详情",
+        "format": {
+            "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
+        },
+        "id": "zhihu_detail",
+        "layout": "app_store"
     },{
         "title" : "v2ex最新主题",
         "url" : "https://www.v2ex.com/api/topics/latest.json",
