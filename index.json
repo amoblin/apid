@@ -76,6 +76,16 @@
             "image" : "img_url"
         }
     },{
+        "title": "绿野",
+        "id": "lvye",
+        "url": "http://api.m.lvye.com/api/search.shtml?publish_start=20151205&sort_type=dateline&sort_way=desc&publish_end=20151207&depart_place=北京",
+        "layout" : "landscape",
+        "content_mapping": {
+            "title": "subject",
+            "subtitle": "summarys",
+            "image": "imgurl"
+        }
+    },{
         "title" : "知乎日报",
         "id": "zhihu_daily",
         "url" : "http://news-at.zhihu.com/api/4/news/latest",
