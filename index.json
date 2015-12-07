@@ -30,14 +30,12 @@
             "image" : "file.key",
             "subtitle" : "description"
         },
-        "action": {
-            "to": "huaban_detail"
-        }
+        "item_action": "huaban_detail"
     },{
         "title": "花瓣",
-        "id": "huaban_detail",
         "method": "GET",
-        "url": "http://api.huaban.com"
+        "url": "http://api.huaban.com",
+        "has_parent": 1
     },{
         "title" : "GitHub",
         "id": "github",
@@ -84,6 +82,17 @@
             "title": "subject",
             "subtitle": "summarys",
             "image": "imgurl"
+        },
+        "item_action": "lvye-detail"
+    },{
+        "title": "绿野详情",
+        "id": "lvye-detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["http://huodongapi.lvye.cn/index.php/eventv2/infov2?tid=%s&PHPSESSID=", "tid"]
+        },
+        "layout": "only-title",
+        "content_mapping": {
         }
     },{
         "title" : "知乎日报",
@@ -98,10 +107,10 @@
         "item_action": "zhihu_detail"
     },{
         "title": "知乎详情",
+        "id": "zhihu_detail",
         "format": {
             "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
         },
-        "id": "zhihu_detail",
         "layout": "webpage",
         "content_mapping": {
             "html": "body",
