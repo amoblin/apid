@@ -53,12 +53,72 @@
         "title" : "大麦",
         "id": "damai",
         "url" : "http://mapi.damai.cn/ProjLst.aspx?cc=0&cityid=852&EndTime=2016-12-03&mc=2&ot=0&p=2&ps=20&source=10099&StartTime=2015-12-03&version=50200",
-        "icon": "https://raw.githubusercontent.com/amoblin/mpi/master/logos/damai.png",
+        "icon_": "https://raw.githubusercontent.com/amoblin/mpi/master/logos/damai.png",
+        "icon": "https://gitcafe.com/amoblin/mpi/raw/master/logos/damai.png",
         "value_path" : "l",
         "layout" : "app_store",
         "content_mapping" : {
             "title" : "n",
             "subtitle" : "VenName"
+        }
+    },{
+        "title" : "知乎日报",
+        "id": "zhihu_daily",
+        "url" : "http://news-at.zhihu.com/api/4/news/latest",
+        "icon": "http://img.d9soft.com/2015/0202/20150202114446555.png",
+        "layout" : "app_store",
+        "value_path" : "stories",
+        "content_mapping" : {
+            "title" : "title",
+            "image" : "images"
+        },
+        "item_action": "zhihu_detail"
+    },{
+        "title": "知乎详情",
+        "id": "zhihu_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
+        },
+        "layout": "webpage",
+        "content_mapping": {
+            "html": "body",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
+        }
+    },{
+        "title" : "v2ex最新主题",
+        "id": "v2ex",
+        "url" : "https://www.v2ex.com/api/topics/latest.json",
+        "icon": "http://news.oneapm.com/content/images/2015/06/logo.jpg",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "title",
+            "image" : "member.avatar_normal",
+            "subtitle" : "content"
+        }
+    },{
+        "title" : "GitHub trending",
+        "id": "github_trending",
+        "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
+        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "full_name",
+            "image" : "owner.avatar_url",
+            "subtitle" : "description"
+        }
+    },{
+        "title": "去登山",
+        "id": "qudengshan",
+        "url": "http://webapi.qudengshan.cn/slines?page=1&page_size=20",
+        "icon": "http://www.qudengshan.cn/wp-content/uploads/2015/05/logo.png",
+        "value_path": "data.slines",
+        "layout": "landscape",
+        "content_mapping": {
+            "title": "name",
+            "altitude": "salit",
+            "distance": "distance",
+            "image": "imgname"
         }
     },{
         "title" : "六只脚",
@@ -72,18 +132,6 @@
             "altitude": "elevation_max",
             "distance": "distance",
             "image" : "img_url"
-        }
-    },{
-        "title": "去登山",
-        "id": "qudengshan",
-        "url": "http://webapi.qudengshan.cn/slines?page=1&page_size=20",
-        "value_path": "data.slines",
-        "layout": "landscape",
-        "content_mapping": {
-            "title": "name",
-            "altitude": "salit",
-            "distance": "distance",
-            "image": "imgname"
         }
     },{
         "title": "绿野",
@@ -115,46 +163,5 @@
             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
         },
         "value_path": "event_info"
-    },{
-        "title" : "知乎日报",
-        "id": "zhihu_daily",
-        "url" : "http://news-at.zhihu.com/api/4/news/latest",
-        "layout" : "app_store",
-        "value_path" : "stories",
-        "content_mapping" : {
-            "title" : "title",
-            "image" : "images"
-        },
-        "item_action": "zhihu_detail"
-    },{
-        "title": "知乎详情",
-        "id": "zhihu_detail",
-        "format": {
-            "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
-        },
-        "layout": "webpage",
-        "content_mapping": {
-            "html": "body",
-            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
-        }
-    },{
-        "title" : "v2ex最新主题",
-        "url" : "https://www.v2ex.com/api/topics/latest.json",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "title",
-            "image" : "member.avatar_normal",
-            "subtitle" : "content"
-        }
-    },{
-        "title" : "GitHub trending",
-        "id": "github_trending",
-        "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "full_name",
-            "image" : "owner.avatar_url",
-            "subtitle" : "description"
-        }
     }]
 }
