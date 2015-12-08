@@ -91,9 +91,18 @@
         "format": {
             "url": ["http://huodongapi.lvye.cn/index.php/eventv2/infov2?tid=%s&PHPSESSID=", "tid"]
         },
-        "layout": "only-title",
+        "layout": "custom",
+        "property_list": [
+            {"name": "gather_time", "display_name": "集合时间"},
+            {"name": "gather_place", "display_name": "集合地点"},
+            {"name": "from_to", "display_name": "起始地点"},
+            {"name": "dest_place", "display_name": "活动地点"},
+            {"name": "transport", "display_name": "包车公示"}
+        ],
         "content_mapping": {
-        }
+            "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
+        },
+        "value_path": "event_info"
     },{
         "title" : "知乎日报",
         "id": "zhihu_daily",
