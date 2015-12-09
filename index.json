@@ -37,31 +37,6 @@
         "url": "http://api.huaban.com",
         "has_parent": 1
     },{
-        "title" : "GitHub",
-        "id": "github",
-        "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
-
-        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
-        "value_path" : "items",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "login",
-            "image" : "avatar_url"
-        }
-    },
-    {
-        "title" : "大麦",
-        "id": "damai",
-        "url" : "http://mapi.damai.cn/ProjLst.aspx?cc=0&cityid=852&EndTime=2016-12-03&mc=2&ot=0&p=2&ps=20&source=10099&StartTime=2015-12-03&version=50200",
-        "icon_": "https://raw.githubusercontent.com/amoblin/mpi/master/logos/damai.png",
-        "icon": "https://gitcafe.com/amoblin/mpi/raw/master/logos/damai.png",
-        "value_path" : "l",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "n",
-            "subtitle" : "VenName"
-        }
-    },{
         "title" : "知乎日报",
         "id": "zhihu_daily",
         "url" : "http://news-at.zhihu.com/api/4/news/latest",
@@ -97,6 +72,30 @@
             "subtitle" : "content"
         }
     },{
+        "title" : "大麦",
+        "id": "damai",
+        "url" : "http://mapi.damai.cn/ProjLst.aspx?cc=0&cityid=852&EndTime=2016-12-03&mc=2&ot=0&p=2&ps=20&source=10099&StartTime=2015-12-03&version=50200",
+        "icon_": "https://raw.githubusercontent.com/amoblin/mpi/master/logos/damai.png",
+        "icon": "https://gitcafe.com/amoblin/mpi/raw/master/logos/damai.png",
+        "value_path" : "l",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "n",
+            "subtitle" : "VenName"
+        }
+    },{
+        "title" : "GitHub",
+        "id": "github",
+        "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
+
+        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
+        "value_path" : "items",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "login",
+            "image" : "avatar_url"
+        }
+    },{
         "title" : "GitHub trending",
         "id": "github_trending",
         "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
@@ -116,9 +115,10 @@
         "layout": "landscape",
         "content_mapping": {
             "title": "name",
-            "altitude": "salit",
-            "distance": "distance",
-            "image": "imgname"
+            "image": "imgname",
+            "left": ["海拔：%s米", "maxalti"],
+            "center": ["里程：%skm", "distance"],
+            "right": ["时长：%sh", "cost"]
         }
     },{
         "title" : "六只脚",
@@ -128,20 +128,22 @@
         "layout" : "landscape",
         "content_mapping" : {
             "title" : "name",
-            "subtitle" : "difficulty",
-            "altitude": "elevation_max",
-            "distance": "distance",
-            "image" : "img_url"
+            "image" : "img_url",
+            "left" : "difficulty",
+            "center": "elevation_max",
+            "right": "distance"
         }
     },{
         "title": "绿野",
         "id": "lvye",
         "url": "http://api.m.lvye.com/api/search.shtml?publish_start=20151205&sort_type=dateline&sort_way=desc&publish_end=20151207&depart_place=北京",
-        "layout" : "landscape",
+        "layout" : "image_and_intro",
         "content_mapping": {
             "title": "subject",
-            "subtitle": "summarys",
-            "image": "imgurl"
+            "image": "imgurl",
+            "left": "property",
+            "center": ["%s元", "price"],
+            "right": "timerange"
         },
         "item_action": "lvye-detail"
     },{
