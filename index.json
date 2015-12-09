@@ -27,7 +27,7 @@
         "layout" : "only_image",
         "content_mapping" : {
             "title" : "name",
-            "image" : "file.key",
+            "image" : ["http://img.hb.aicdn.com/%s", "file.key"],
             "subtitle" : "description"
         },
         "item_action": "huaban_detail"
