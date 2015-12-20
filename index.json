@@ -55,7 +55,7 @@
         "format": {
             "url": ["http://news-at.zhihu.com/api/4/news/%s", "id"]
         },
-        "layout": "webpage",
+        "layout": "webview",
         "content_mapping": {
             "html": "body",
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
@@ -165,5 +165,9 @@
             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
         },
         "value_path": "event_info"
+    },{
+        "title": "登陆注册",
+        "id": "login",
+        "view": "login"
     }]
 }
