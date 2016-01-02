@@ -1,0 +1,15 @@
+{
+    "filename": "sourcelist",
+    "created_at": "2016-01-02 18:26:46",
+    "author": "amoblin",
+
+    "sources": [{
+        "index": "https://gitcafe.com/amoblin/mpi/raw/master/index.json",
+        "author": "amoblin"
+    },{
+        "index": "https://raw.githubusercontent.com/amoblin/mpi/master/index.json",
+        "author": "amoblin"
+    }],
+    
+    "description": ""
+}
