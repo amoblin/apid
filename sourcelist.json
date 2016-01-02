@@ -10,6 +10,12 @@
         "index": "https://raw.githubusercontent.com/amoblin/mpi/master/index.json",
         "author": "amoblin"
     }],
+
+    "value_path": "sources",
+    "layout": "only_title",
+    "content_mapping": {
+        "title": "index"
+    },
     
     "description": ""
 }
