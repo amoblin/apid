@@ -16,7 +16,7 @@
         "title" : "花瓣网",
         "id": "huaban_index",
         "method" : "GET",
-        "url" : "http://api.huaban.com/favorite/beauty",
+        "url" : "http://api.huaban.com/favorite",
         "url_params" : "",
         "body_type" : "",
         "body_params" : "",
@@ -165,9 +165,5 @@
             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
         },
         "value_path": "event_info"
-    },{
-        "title": "登陆注册",
-        "id": "login",
-        "view": "login"
     }]
 }
