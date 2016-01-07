@@ -16,7 +16,7 @@
         "title" : "花瓣网",
         "id": "huaban_index",
         "method" : "GET",
-        "url" : "http://api.huaban.com/favorite",
+        "url" : "http://api.huaban.com/favorite/wedding_events",
         "url_params" : "",
         "body_type" : "",
         "body_params" : "",
