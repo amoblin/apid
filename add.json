@@ -1,0 +1,81 @@
+{
+    "filename": "add",
+    "created_at": "2016-01-09 10:19:02",
+    "author": "amoblin",
+
+    "value_path": "properties",
+    "properties": [{
+        "defaultValue" : "新请求",
+        "id" : "title",
+        "name" : "TITLE",
+        "type" : "string"
+    },{
+        "id" : "method",
+        "name" : "METHOD",
+        "type" : "enum",
+        "collections" : [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+        ]
+    },{
+        "defaultValue" : "http://api.huaban.com",
+        "id" : "url",
+        "name" : "URL",
+        "type" : "string"
+    },{
+        "defaultValue" : "http://api.huaban.com",
+        "id" : "host",
+        "name" : "HOST",
+        "type" : "string"
+    }, {
+        "defaultValue" : "/",
+        "id" : "path",
+        "name" : "PATH",
+        "type" : "string"
+    }, {
+        "defaultValue" : "p=1&d=0",
+        "id" : "url_params",
+        "name" : "URL Params",
+        "type" : "string"
+    },{
+        "id" : "body_type",
+        "name" : "Body Type",
+        "type" : "enum",
+        "collections" : [
+            "Text",
+            "JSON",
+            "Form URL-Encoded",
+            "Multipart",
+            "File"
+        ]
+    },{
+        "defaultValue" : "{}",
+        "id" : "body_params",
+        "name" : "Body Params",
+        "type" : "string"
+    },{
+        "defaultValue" : ".",
+        "id" : "value_path",
+        "name" : "Value Path",
+        "type" : "string"
+    },{
+        "collections" : [
+            "only_title",
+            "app_store",
+            "landscape",
+            "only_image",
+            "image_and_intro",
+            "rssfeed",
+            "webview",
+            "webpage",
+            "custom"
+        ],
+        "id" : "layout",
+        "name" : "Layout",
+        "type" : "enum",
+        "action" : "layoutView"
+    }],
+    "description": ""
+}
