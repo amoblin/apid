@@ -165,5 +165,71 @@
             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
         },
         "value_path": "event_info"
+    },{
+        "title": "登陆注册",
+        "id": "login",
+        "view": "login",
+        "is_beta": 1,
+    },{
+        "title": "iOSBlogCN",
+        "id": "rss",
+        "url": "https://raw.githubusercontent.com/tangqiaoboy/iOSBlogCN/master/blogcn.opml",
+        "is_xml": 1,
+        "view": "only_title",
+        "value_path": "body.outline.outline",
+        "content_mapping" : {
+            "title" : "_title"
+        },
+        "item_action": "rss_detail"
+    },{
+        "id": "rss_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["%s", "_xmlUrl"]
+        },
+        "is_xml": 1,
+        "view": "rss",
+        "layout": "rssfeed",
+        "content_mapping": {
+            "title": "title",
+            "pub_date": "published",
+            "intro": "content",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
+        },
+        "item_action": "rss_article_detail"
+    },{
+        "title": "文章详情",
+        "id": "rss_article_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["%s", "link"]
+        },
+        "layout": "webpage",
+        "content_mapping": {
+            "html": "body",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
+        }
+    },{
+        "title": "Mac App Store",
+        "is_beta": 1,
+        "id": "mac_app_store",
+        "layout": "app_store",
+        "url": "https://itunes.apple.com/cn/rss/topfreemacapps/limit=200/json",
+        "value_path": "feed.entry",
+        "content_mapping": {
+            "title": "im:name.label",
+            "subtitle": "category.attributes.label"
+        }
+    },{
+        "title": "Mac App Store",
+        "is_beta": 1,
+        "id": "mac_app_store",
+        "layout": "app_store",
+        "url": "https://itunes.apple.com/cn/rss/topfreemacapps/limit=200/genre=12014/json",
+        "value_path": "feed.entry",
+        "content_mapping": {
+            "title": "im:name.label",
+            "subtitle": "category.attributes.label"
+        }
     }]
 }

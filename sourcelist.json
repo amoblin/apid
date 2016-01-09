@@ -11,6 +11,9 @@
         "index": "https://raw.githubusercontent.com/amoblin/mpi/master/index.json",
         "add": "https://raw.githubusercontent.com/amoblin/mpi/master/add.json",
         "author": "amoblin"
+    },{
+        "index": "https://raw.githubusercontent.com/coderyi/mpi/master/index.json",
+        "author": "coderyi"
     }],
 
     "value_path": "sources",
