@@ -4,6 +4,7 @@
     "author": "amoblin",
 
     "value_path": "properties",
+    "layout": "custom",
     "properties": [{
         "value" : "花瓣推荐",
         "id" : "title",
