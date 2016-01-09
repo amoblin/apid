@@ -5,7 +5,7 @@
 
     "value_path": "properties",
     "properties": [{
-        "defaultValue" : "新请求",
+        "value" : "花瓣推荐",
         "id" : "title",
         "name" : "TITLE",
         "type" : "string"
@@ -20,27 +20,27 @@
             "DELETE"
         ]
     },{
-        "defaultValue" : "http://api.huaban.com",
+        "value" : "http://api.huaban.com",
         "id" : "url",
         "name" : "URL",
         "type" : "string"
     },{
-        "defaultValue" : "http://api.huaban.com",
+        "value" : "",
         "id" : "host",
         "name" : "HOST",
         "type" : "string"
     }, {
-        "defaultValue" : "/",
+        "value" : "/",
         "id" : "path",
         "name" : "PATH",
         "type" : "string"
     }, {
-        "defaultValue" : "p=1&d=0",
-        "id" : "url_params",
+        "value" : "",
+        "id" : "urlParams",
         "name" : "URL Params",
         "type" : "string"
     },{
-        "id" : "body_type",
+        "id" : "bodyType",
         "name" : "Body Type",
         "type" : "enum",
         "collections" : [
@@ -51,13 +51,13 @@
             "File"
         ]
     },{
-        "defaultValue" : "{}",
-        "id" : "body_params",
+        "value" : "{}",
+        "id" : "bodyParams",
         "name" : "Body Params",
         "type" : "string"
     },{
-        "defaultValue" : ".",
-        "id" : "value_path",
+        "value" : "recommends",
+        "id" : "valuePath",
         "name" : "Value Path",
         "type" : "string"
     },{
@@ -74,8 +74,14 @@
         ],
         "id" : "layout",
         "name" : "Layout",
+        "value": "app_store",
         "type" : "enum",
         "action" : "layoutView"
+    },{
+        "id": "contentMapping",
+        "name": "Content Mapping",
+        "value": "{\"title\": \"title\"}",
+        "type": "object"
     }],
     "description": ""
 }
