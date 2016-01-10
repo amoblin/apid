@@ -13,3 +13,4 @@ API data for mpi
 # API文档
 
 - [知乎日报 API 分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/知乎日报-API-分析)
+- [](http://www.lxway.com/692008056.htm)

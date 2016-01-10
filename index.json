@@ -190,12 +190,6 @@
         "is_xml": 1,
         "view": "rss",
         "layout": "rssfeed",
-        "content_mapping": {
-            "title": "title",
-            "pub_date": "published",
-            "intro": "content",
-            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
-        },
         "item_action": "rss_article_detail"
     },{
         "title": "文章详情",
@@ -230,6 +224,16 @@
         "content_mapping": {
             "title": "im:name.label",
             "subtitle": "category.attributes.label"
+        }
+    },{
+        "title": "开发者头条",
+        "is_beta": 1,
+        "id": "developer_toutiao",
+        "layout": "app_store",
+        "url": "http://api.toutiao.io/v2/subjects/4/shares?app_key=nid5puvc9t0v7hltuy1u&page=1&pageSize=20&signature=683ca097e77a79926766bb70488303e59d9d3401&timestamp=1452353625",
+        "value_path": "data",
+        "content_mapping": {
+            "title": "title"
         }
     }]
 }

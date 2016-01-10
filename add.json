@@ -37,11 +37,11 @@
         "type" : "string"
     }, {
         "value" : "",
-        "id" : "urlParams",
+        "id" : "url_params",
         "name" : "URL Params",
         "type" : "string"
     },{
-        "id" : "bodyType",
+        "id" : "body_type",
         "name" : "Body Type",
         "type" : "enum",
         "collections" : [
@@ -53,12 +53,12 @@
         ]
     },{
         "value" : "{}",
-        "id" : "bodyParams",
+        "id" : "body_params",
         "name" : "Body Params",
         "type" : "string"
     },{
         "value" : "recommends",
-        "id" : "valuePath",
+        "id" : "value_path",
         "name" : "Value Path",
         "type" : "string"
     },{
@@ -79,7 +79,7 @@
         "type" : "enum",
         "action" : "layoutView"
     },{
-        "id": "contentMapping",
+        "id": "content_mapping",
         "name": "Content Mapping",
         "value": "{\"title\": \"title\"}",
         "type": "object"
