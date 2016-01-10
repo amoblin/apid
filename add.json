@@ -31,7 +31,7 @@
         "name" : "HOST",
         "type" : "string"
     }, {
-        "value" : "/",
+        "value" : "",
         "id" : "path",
         "name" : "PATH",
         "type" : "string"
