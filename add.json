@@ -87,11 +87,19 @@
 
     "layouts": [{
         "id": "app_store",
-        "properties": [
-            "title",
-            "subtitle",
-            "image"
-        ]
+        "properties": [{
+            "id": "title",
+            "name": "title",
+            "type": "string"
+        },{
+            "id": "subtitle",
+            "name": "subtitle",
+            "type": "string"
+        },{
+            "id": "image",
+            "name": "image",
+            "type": "string"
+        }]
     }],
     "description": ""
 }
