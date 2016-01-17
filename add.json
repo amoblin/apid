@@ -90,15 +90,15 @@
         "properties": [{
             "id": "title",
             "name": "title",
-            "type": "string"
+            "type": "valuePathObject"
         },{
             "id": "subtitle",
             "name": "subtitle",
-            "type": "string"
+            "type": "valuePathObject"
         },{
             "id": "image",
             "name": "image",
-            "type": "string"
+            "type": "valuePathObject"
         }]
     }],
     "description": ""
