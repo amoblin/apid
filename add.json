@@ -84,5 +84,14 @@
         "value": "{\"title\": \"title\"}",
         "type": "object"
     }],
+
+    "layouts": [{
+        "id": "app_store",
+        "properties": [
+            "title",
+            "subtitle",
+            "image"
+        ]
+    }],
     "description": ""
 }
