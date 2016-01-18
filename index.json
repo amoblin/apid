@@ -237,8 +237,9 @@
         "id": "developer_toutiao_detail",
         "has_parent": 1,
         "format": {
-            "url": ["%s", "original_url"]
+            "url": "original_url"
         },
         "layout": "webpage"
-    }]
+    }],
+    "item_action": "marboo_apid_detail"
 }
