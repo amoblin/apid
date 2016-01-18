@@ -169,7 +169,7 @@
         "title": "登陆注册",
         "id": "login",
         "view": "login",
-        "is_beta": 1,
+        "is_beta": 1
     },{
         "title": "iOSBlogCN",
         "id": "rss",
@@ -234,6 +234,19 @@
         "value_path": "data",
         "content_mapping": {
             "title": "title"
+        },
+        "item_action": "developer_toutiao_detail"
+    },{
+        "title": "开发者头条详情",
+        "id": "developer_toutiao_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["%s", "original_url"]
+        },
+        "layout": "webview",
+        "content_mapping": {
+            "html": "body",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
     }]
 }
