@@ -198,11 +198,7 @@
         "format": {
             "url": ["%s", "link"]
         },
-        "layout": "webpage",
-        "content_mapping": {
-            "html": "body",
-            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
-        }
+        "layout": "webpage"
     },{
         "title": "Mac App Store",
         "is_beta": 1,
@@ -243,10 +239,6 @@
         "format": {
             "url": ["%s", "original_url"]
         },
-        "layout": "webview",
-        "content_mapping": {
-            "html": "body",
-            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
-        }
+        "layout": "webpage"
     }]
 }
