@@ -21,7 +21,7 @@
             "DELETE"
         ]
     },{
-        "value" : "http://api.huaban.com",
+        "placeholder" : "请输入API地址",
         "id" : "url",
         "name" : "URL",
         "type" : "string",
@@ -53,12 +53,12 @@
             "File"
         ]
     },{
-        "value" : "{}",
+        "value" : "",
         "id" : "body_params",
         "name" : "Body Params",
         "type" : "string"
     },{
-        "value" : "recommends",
+        "placeholder" : "请输入数据路径",
         "id" : "value_path",
         "name" : "Value Path",
         "type" : "string"
@@ -82,7 +82,7 @@
     },{
         "id": "content_mapping",
         "name": "Content Mapping",
-        "value": "{\"title\": \"title\"}",
+        "placeholder": "点击来选择显示哪些信息",
         "type": "object"
     }],
 
