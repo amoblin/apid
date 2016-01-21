@@ -24,7 +24,8 @@
         "value" : "http://api.huaban.com",
         "id" : "url",
         "name" : "URL",
-        "type" : "string"
+        "type" : "string",
+        "editable": 1
     },{
         "value" : "",
         "id" : "host",

@@ -240,6 +240,11 @@
             "url": "original_url"
         },
         "layout": "webpage"
+    },{
+        "title": "36Kr",
+        "url": "https://rong.36kr.com/api/mobi/news?columnId=all",
+        "id": "36kr",
+        "value_path": "data.data"
     }],
     "item_action": "marboo_apid_detail"
 }
