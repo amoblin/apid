@@ -9,7 +9,8 @@
         "value" : "花瓣推荐",
         "id" : "title",
         "name" : "TITLE",
-        "type" : "string"
+        "type" : "string",
+        "editable": 1
     },{
         "id" : "method",
         "name" : "METHOD",
@@ -88,19 +89,18 @@
 
     "layouts": [{
         "id": "app_store",
-        "properties": [{
-            "id": "title",
-            "name": "title",
-            "type": "valuePathObject"
-        },{
-            "id": "subtitle",
-            "name": "subtitle",
-            "type": "valuePathObject"
-        },{
-            "id": "image",
-            "name": "image",
-            "type": "valuePathObject"
-        }]
+        "properties": [
+            "title",
+            "subtitle",
+            "image"
+        ]
+    },{
+        "id": "only_image",
+        "properties": [
+            "title",
+            "subtitle",
+            "image"
+        ]
     }],
     "description": ""
 }
