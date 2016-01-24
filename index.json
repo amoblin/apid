@@ -247,9 +247,10 @@
         "value_path": "data.data",
         "item_action": "36kr_detail"
     },{
-        "title": "36Kr_detail",
+        "title": "36Kr详情",
         "id": "36kr_detail",
         "has_parent": 1,
+        "is_beta": 1,
         "format": {
             "url": ["https://rong.36kr.com/api/mobi/news/%s", "feedId"]
         },
