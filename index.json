@@ -258,6 +258,12 @@
             "html": "data.content",
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
+    },{
+        "title": "IT桔子",
+        "url": "http://service.itjuzi.com/investevents/all",
+        "method": "POST",
+        "id": "itjuzi",
+        "is_beta": 1
     }],
     "item_action": "marboo_apid_detail"
 }
