@@ -259,6 +259,10 @@
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
     },{
+        "title": "ifanr",
+        "id": "ifanr",
+        "url": "http://www.ifanr.com/api/v3.0/?action=latest&post_type=post&mix_dasheng=1&posts_per_page=10&offset_featured=1&excerpt_length=90&thumb_size=240x150&appkey=sg5673g77yk72455af4sd55ea&timestamp=1453603931&sign=547ad614ac617070b20ad5284d4eb905"
+    },{
         "title": "IT桔子",
         "url": "http://service.itjuzi.com/investevents/all",
         "method": "POST",
