@@ -274,6 +274,16 @@
             "title": "invse_title",
             "subtitle": "invse_des",
             "image": ["http://itjuzi.com/images/%s", "com_logo"]
+        },
+        "item_action": "itjuzi_detail"
+    },{
+        "title": "IT桔子详情",
+        "url": "http://service.itjuzi.com/investevents/get_detaile_by_id",
+        "method": "POST",
+        "id": "itjuzi_detail",
+        "is_beta": 1,
+        "body_params": {
+            "invse_id": "14451"
         }
     }],
     "item_action": "marboo_apid_detail"
