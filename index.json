@@ -17,9 +17,7 @@
         "id": "huaban_index",
         "method" : "GET",
         "url" : "http://api.huaban.com/favorite/wedding_events",
-        "url_params" : "",
         "body_type" : "",
-        "body_params" : "",
 
         "icon": "http://hbfile.b0.upaiyun.com/img/about/brand/webicon/files/HuabanWebIcon_64px.png",
         "value_path" : "pins",
