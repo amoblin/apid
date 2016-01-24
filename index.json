@@ -283,7 +283,19 @@
         "is_beta": 1,
         "body_params": {
             "invse_id": "14451"
-        }
+        },
+        "layout": "custom",
+        "property_list": [
+            {"name": "invse_des", "display_name": "简介"},
+            {"name": "investments.@unionOfObjects.invst_name", "display_name": "投资方"},
+            {"name": "com_scope_name", "display_name": "领域"},
+            {"name": "invse_round_name", "display_name": "轮次"},
+            {"name": "invse_similar_money", "display_name": "金额"}
+        ],
+        "content_mapping": {
+            "invse_similar_money": ["%s %s", "invse_similar_money_name", "invse_currency_name"]
+        },
+        "value_path": "result"
     }],
     "item_action": "marboo_apid_detail"
 }
