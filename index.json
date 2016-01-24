@@ -244,7 +244,20 @@
         "title": "36Kr",
         "url": "https://rong.36kr.com/api/mobi/news?columnId=all",
         "id": "36kr",
-        "value_path": "data.data"
+        "value_path": "data.data",
+        "item_action": "36kr_detail"
+    },{
+        "title": "36Kr_detail",
+        "id": "36kr_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["https://rong.36kr.com/api/mobi/news/%s", "feedId"]
+        },
+        "layout": "webview",
+        "content_mapping": {
+            "html": "data.content",
+            "css": "http://daily.zhihu.com/css/share.css?v=5956a"
+        }
     }],
     "item_action": "marboo_apid_detail"
 }
