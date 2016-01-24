@@ -153,11 +153,11 @@
         },
         "layout": "custom",
         "property_list": [
-            {"name": "gather_time", "display_name": "集合时间"},
-            {"name": "gather_place", "display_name": "集合地点"},
-            {"name": "from_to", "display_name": "起始地点"},
-            {"name": "dest_place", "display_name": "活动地点"},
-            {"name": "transport", "display_name": "包车公示"}
+            {"value_path": "gather_time", "name": "集合时间"},
+            {"value_path": "gather_place", "name": "集合地点"},
+            {"value_path": "from_to", "name": "起始地点"},
+            {"value_path": "dest_place", "name": "活动地点"},
+            {"value_path": "transport", "name": "包车公示"}
         ],
         "content_mapping": {
             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
@@ -286,11 +286,11 @@
         },
         "layout": "custom",
         "property_list": [
-            {"name": "invse_des", "display_name": "简介"},
-            {"name": "investments.@unionOfObjects.invst_name", "display_name": "投资方"},
-            {"name": "com_scope_name", "display_name": "领域"},
-            {"name": "invse_round_name", "display_name": "轮次"},
-            {"name": "invse_similar_money", "display_name": "金额"}
+            {"value_path": "invse_des", "name": "简介"},
+            {"value_path": "investments.@unionOfObjects.invst_name", "name": "投资方"},
+            {"value_path": "com_scope_name", "name": "领域"},
+            {"value_path": "invse_round_name", "name": "轮次"},
+            {"value_path": "invse_similar_money", "name": "金额"}
         ],
         "content_mapping": {
             "invse_similar_money": ["%s %s", "invse_similar_money_name", "invse_currency_name"]
