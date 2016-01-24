@@ -277,6 +277,7 @@
     },{
         "title": "IT桔子详情",
         "url": "http://service.itjuzi.com/investevents/get_detaile_by_id",
+        "has_parent": 1,
         "method": "POST",
         "id": "itjuzi_detail",
         "is_beta": 1,
