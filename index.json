@@ -282,7 +282,10 @@
         "id": "itjuzi_detail",
         "is_beta": 1,
         "body_params": {
-            "invse_id": "14451"
+            "invse_id": "invse_id"
+        },
+        "format": {
+            "invse_id": "invse_id"
         },
         "layout": "custom",
         "property_list": [
