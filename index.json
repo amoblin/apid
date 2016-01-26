@@ -49,7 +49,7 @@
         "method": "POST",
         "id": "itjuzi",
 
-        "priority": 1,
+        "priority": 999,
         "icon": "https://www.itjuzi.com/assets/front/images/photo/about-prod-app.png",
         "value_path": "result",
         "content_mapping": {
@@ -87,7 +87,7 @@
         "id": "zhihu_daily",
         "url" : "http://news-at.zhihu.com/api/4/news/latest",
 
-        "priority": 1,
+        "priority": 1000,
         "icon": "http://img.d9soft.com/2015/0202/20150202114446555.png",
         "layout" : "app_store",
         "value_path" : "stories",
@@ -197,7 +197,8 @@
         "id": "lvye",
         "url": "http://api.m.lvye.com/api/search.shtml?publish_start=20151205&sort_type=dateline&sort_way=desc&publish_end=20151207&depart_place=北京",
 
-        "priority": 1,
+        "priority": 100,
+        "icon": "http://www.lvye.cn/header/images/logo.png",
         "layout" : "image_and_intro",
         "content_mapping": {
             "title": "subject",
