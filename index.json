@@ -103,6 +103,43 @@
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
     },{
+        "title" : "GitHub trending",
+        "id": "github_trending",
+        "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
+        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "full_name",
+            "image" : "owner.avatar_url",
+            "subtitle" : "description"
+        }
+    },{
+        "title" : "GitHub",
+        "id": "github",
+        "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
+
+        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
+        "value_path" : "items",
+        "layout" : "app_store",
+        "content_mapping" : {
+            "title" : "login",
+            "image" : "avatar_url"
+        }
+    },{
+        "title": "去登山",
+        "id": "qudengshan",
+        "url": "http://webapi.qudengshan.cn/slines?page=1&page_size=20",
+        "icon": "http://www.qudengshan.cn/wp-content/uploads/2015/05/logo.png",
+        "value_path": "data.slines",
+        "layout": "landscape",
+        "content_mapping": {
+            "title": "name",
+            "image": "imgname",
+            "left": ["海拔：%s米", "maxalti"],
+            "center": ["里程：%skm", "distance"],
+            "right": ["时长：%sh", "cost"]
+        }
+    },{
         "title" : "v2ex最新主题",
         "id": "v2ex",
         "url" : "https://www.v2ex.com/api/topics/latest.json",
@@ -124,43 +161,6 @@
         "content_mapping" : {
             "title" : "n",
             "subtitle" : "VenName"
-        }
-    },{
-        "title" : "GitHub",
-        "id": "github",
-        "url" : "https://api.github.com/search/users?sort=followers&page=1&q=location:beijing+language:Objective-C",
-
-        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
-        "value_path" : "items",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "login",
-            "image" : "avatar_url"
-        }
-    },{
-        "title" : "GitHub trending",
-        "id": "github_trending",
-        "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
-        "icon": "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png",
-        "layout" : "app_store",
-        "content_mapping" : {
-            "title" : "full_name",
-            "image" : "owner.avatar_url",
-            "subtitle" : "description"
-        }
-    },{
-        "title": "去登山",
-        "id": "qudengshan",
-        "url": "http://webapi.qudengshan.cn/slines?page=1&page_size=20",
-        "icon": "http://www.qudengshan.cn/wp-content/uploads/2015/05/logo.png",
-        "value_path": "data.slines",
-        "layout": "landscape",
-        "content_mapping": {
-            "title": "name",
-            "image": "imgname",
-            "left": ["海拔：%s米", "maxalti"],
-            "center": ["里程：%skm", "distance"],
-            "right": ["时长：%sh", "cost"]
         }
     },{
         "title" : "六只脚",
@@ -224,6 +224,7 @@
         },
         "item_action": "rss_detail"
     },{
+        "title": "iOSBlogCN文章列表",
         "id": "rss_detail",
         "has_parent": 1,
         "format": {
@@ -234,7 +235,7 @@
         "view": "rss",
         "item_action": "rss_article_detail"
     },{
-        "title": "文章详情",
+        "title": "iOSBlogCN文章详情",
         "id": "rss_article_detail",
         "has_parent": 1,
         "format": {
