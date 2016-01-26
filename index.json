@@ -35,6 +35,47 @@
         "url": "http://api.huaban.com",
         "has_parent": 1
     },{
+        "title": "爱范儿",
+        "id": "ifanr",
+        "url": "http://www.ifanr.com/api/v3.0/?action=latest&post_type=post&mix_dasheng=1&posts_per_page=10&offset_featured=1&excerpt_length=90&thumb_size=240x150&appkey=sg5673g77yk72455af4sd55ea&timestamp=1453603931&sign=547ad614ac617070b20ad5284d4eb905",
+        "value_path": "data"
+    },{
+        "title": "IT桔子",
+        "url": "http://service.itjuzi.com/investevents/all",
+        "method": "POST",
+        "id": "itjuzi",
+        "value_path": "result",
+        "content_mapping": {
+            "title": "invse_title",
+            "subtitle": "invse_des",
+            "image": ["http://itjuzi.com/images/%s", "com_logo"]
+        },
+        "item_action": "itjuzi_detail"
+    },{
+        "title": "IT桔子详情",
+        "url": "http://service.itjuzi.com/investevents/get_detaile_by_id",
+        "has_parent": 1,
+        "method": "POST",
+        "id": "itjuzi_detail",
+        "body_params": {
+            "invse_id": "invse_id"
+        },
+        "format": {
+            "invse_id": "invse_id"
+        },
+        "layout": "custom",
+        "property_list": [
+            {"value_path": "invse_des", "name": "简介"},
+            {"value_path": "investments.@unionOfObjects.invst_name", "name": "投资方"},
+            {"value_path": "com_scope_name", "name": "领域"},
+            {"value_path": "invse_round_name", "name": "轮次"},
+            {"value_path": "invse_similar_money", "name": "金额"}
+        ],
+        "content_mapping": {
+            "invse_similar_money": ["%s %s", "invse_similar_money_name", "invse_currency_name"]
+        },
+        "value_path": "result"
+    },{
         "title" : "知乎日报",
         "id": "zhihu_daily",
         "url" : "http://news-at.zhihu.com/api/4/news/latest",
@@ -221,7 +262,6 @@
         }
     },{
         "title": "开发者头条",
-        "is_beta": 1,
         "id": "developer_toutiao",
         "layout": "app_store",
         "url": "http://api.toutiao.io/v2/subjects/4/shares?app_key=nid5puvc9t0v7hltuy1u&page=1&pageSize=20&signature=683ca097e77a79926766bb70488303e59d9d3401&timestamp=1452353625",
@@ -257,48 +297,6 @@
             "html": "data.content",
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
-    },{
-        "title": "ifanr",
-        "id": "ifanr",
-        "url": "http://www.ifanr.com/api/v3.0/?action=latest&post_type=post&mix_dasheng=1&posts_per_page=10&offset_featured=1&excerpt_length=90&thumb_size=240x150&appkey=sg5673g77yk72455af4sd55ea&timestamp=1453603931&sign=547ad614ac617070b20ad5284d4eb905",
-        "value_path": "data"
-    },{
-        "title": "IT桔子",
-        "url": "http://service.itjuzi.com/investevents/all",
-        "method": "POST",
-        "id": "itjuzi",
-        "value_path": "result",
-        "content_mapping": {
-            "title": "invse_title",
-            "subtitle": "invse_des",
-            "image": ["http://itjuzi.com/images/%s", "com_logo"]
-        },
-        "item_action": "itjuzi_detail"
-    },{
-        "title": "IT桔子详情",
-        "url": "http://service.itjuzi.com/investevents/get_detaile_by_id",
-        "has_parent": 1,
-        "method": "POST",
-        "id": "itjuzi_detail",
-        "is_beta": 1,
-        "body_params": {
-            "invse_id": "invse_id"
-        },
-        "format": {
-            "invse_id": "invse_id"
-        },
-        "layout": "custom",
-        "property_list": [
-            {"value_path": "invse_des", "name": "简介"},
-            {"value_path": "investments.@unionOfObjects.invst_name", "name": "投资方"},
-            {"value_path": "com_scope_name", "name": "领域"},
-            {"value_path": "invse_round_name", "name": "轮次"},
-            {"value_path": "invse_similar_money", "name": "金额"}
-        ],
-        "content_mapping": {
-            "invse_similar_money": ["%s %s", "invse_similar_money_name", "invse_currency_name"]
-        },
-        "value_path": "result"
     }],
     "item_action": "marboo_apid_detail"
 }
