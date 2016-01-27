@@ -64,22 +64,32 @@
         "name" : "Value Path",
         "type" : "string"
     },{
-        "collections" : [
-            "only_title",
-            "app_store",
-            "landscape",
-            "only_image",
-            "image_and_intro",
-            "rssfeed",
-            "webview",
-            "webpage",
-            "custom"
-        ],
+        "collections" : [{
+            "title": "only_title"
+        },{
+            "title": "app_store",
+        },{
+            "title": "landscape",
+        },{
+            "title": "only_image",
+        },{
+            "title": "image_and_intro",
+        },{
+            "title": "rssfeed",
+        },{
+            "title": "webview",
+        },{
+            "title": "webpage",
+        },{
+            "title": "custom"
+        }],
         "id" : "layout",
         "name" : "Layout",
         "value": "app_store",
         "type" : "enum",
-        "action" : "layoutView"
+
+        "value_path": "collections",
+        "layout": "only_title"
     },{
         "id": "content_mapping",
         "name": "Content Mapping",
