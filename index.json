@@ -49,7 +49,7 @@
         "method": "POST",
         "id": "itjuzi",
 
-        "priority": 999,
+        "priority": 990,
         "icon": "https://www.itjuzi.com/assets/front/images/photo/about-prod-app.png",
         "value_path": "result",
         "content_mapping": {
@@ -290,7 +290,7 @@
         "title": "开发者头条",
         "id": "developer_toutiao",
 
-        "priority": 1,
+        "priority": 999,
         "layout": "app_store",
         "url": "http://api.toutiao.io/v2/subjects/4/shares?app_key=nid5puvc9t0v7hltuy1u&page=1&pageSize=20&signature=683ca097e77a79926766bb70488303e59d9d3401&timestamp=1452353625",
         "value_path": "data",
