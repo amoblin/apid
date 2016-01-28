@@ -65,23 +65,32 @@
         "type" : "string"
     },{
         "collections" : [{
-            "title": "only_title"
+            "title": "only_title",
+            "image": ""
         },{
             "title": "app_store",
+            "image": ""
         },{
             "title": "landscape",
+            "image": ""
         },{
             "title": "only_image",
+            "image": ""
         },{
             "title": "image_and_intro",
+            "image": ""
         },{
             "title": "rssfeed",
+            "image": ""
         },{
             "title": "webview",
+            "image": ""
         },{
             "title": "webpage",
+            "image": ""
         },{
-            "title": "custom"
+            "title": "custom",
+            "image": ""
         }],
         "id" : "layout",
         "name" : "Layout",
@@ -89,7 +98,7 @@
         "type" : "enum",
 
         "value_path": "collections",
-        "layout": "only_title"
+        "layout": "app_store"
     },{
         "id": "content_mapping",
         "name": "Content Mapping",
