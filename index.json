@@ -327,6 +327,18 @@
             "html": "data.content",
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
+    },{
+        "title": "少年霜",
+        "url": "http://mobileapi.5sing.kugou.com/recent/listPage?userid=1923131&sign=o9ELELlZCxEH1zImhWV1VA/vR1CHTYfARjHxUPSW4SaQWcRVbRrNeA==&pageindex=1&pagesize=20&fields=ID%2CNN%2CI%2CB%2CP%2CC%2CSX%2CE%2CM%2CVT%2CCT%2CTYC%2CTFC%2CTBZ%2CTFD%2CTFS%2CSC%2CDJ&version=5.9.0",
+        "id": "shuangshuang",
+        "value_path": "data.content",
+        "content_mapping": {
+            "audio": "FileName",
+            "title": "SongName",
+            "subtitle": "Singer",
+            "image": "Content.5:-8"
+        },
+        "is_beta": 1
     }],
     "item_action": "marboo_apid_detail"
 }
