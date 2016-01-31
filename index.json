@@ -257,6 +257,17 @@
         },
         "is_beta": 1
     },{
+        "title": "8264",
+        "url": "http://mobile.8264.com/forum.php?mod=m_forumdisplay&fid=12&offset=0&size=50&orderby=lastpost",
+        "id": "8264",
+        "value_path": "data.forum_list",
+        "content_mapping": {
+            "title": "subject",
+            "subtitle": "author",
+            "image": "author_avatar"
+        },
+        "is_beta": 1
+    },{
         "title": "登陆注册",
         "id": "login",
         "view": "login",
