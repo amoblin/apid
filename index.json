@@ -109,6 +109,16 @@
             "css": "http://daily.zhihu.com/css/share.css?v=5956a"
         }
     },{
+        "title": "简书",
+        "id": "jianshu",
+        "url": "https://s0.jianshuapi.com/v2/trending/daily.json?app%5Bname%5D=hugo&app%5Bversion%5D=2.10.3&auth1=24a0ed8ea208b2c1c55d3918b1a5fa12&count=10&device%5Bguid%5D=83D887CE-A689-4CD3-BE3E-FC98012AA5DD&limit=10&page=1&timestamp=1454253829",
+        "content_mapping": {
+            "title": "title",
+            "subtitle": "desc",
+            "image": "list_image"
+        },
+        "is_beta": 1
+    },{
         "title" : "GitHub trending",
         "id": "github_trending",
         "url" : "http://trending.codehub-app.com/v2/trending?since=daily",
@@ -242,7 +252,7 @@
         "value_path": "list",
         "content_mapping": {
             "title": "title",
-            "image": ["http://www.biketo.com/%s", "titlepic.@0"],
+            "image": ["http://www.biketo.com/%s", "titlepic.@0.self"],
             "subtitle": "smalltext"
         },
         "is_beta": 1
