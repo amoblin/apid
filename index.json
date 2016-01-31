@@ -333,7 +333,7 @@
         "id": "shuangshuang",
         "value_path": "data.content",
         "content_mapping": {
-            "audio": "FileName",
+            "media": "FileName",
             "title": "SongName",
             "subtitle": "Singer",
             "image": "Content.5:-8"
