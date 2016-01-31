@@ -338,6 +338,7 @@
             "subtitle": "Singer",
             "image": "Content.5:-8"
         },
+        "layout": "audio",
         "is_beta": 1
     }],
     "item_action": "marboo_apid_detail"
