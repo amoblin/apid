@@ -341,6 +341,17 @@
         "view": "media",
         "layout": "audio",
         "is_beta": 1
+    },{
+        "title": "英语魔方秀",
+        "url": "http://www.mofunenglish.com/api3/mb/dub_list_hot?device_id=490860c725a8418ba89f5e622720b334&lang=zh-CN&token=9f7ad0b3b7a158cb8749f5f7452daa6b&trigger=user&user_id=2873855&v=ios_7.1&",
+        "id": "mofunenglish",
+        "value_path": "list",
+        "content_mapping": {
+            "media": "attachment.dub.video.file"
+        },
+        "view": "media",
+        "layout": "video",
+        "is_beta": 1
     }],
     "item_action": "marboo_apid_detail"
 }
