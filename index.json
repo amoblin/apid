@@ -228,6 +228,14 @@
         },
         "value_path": "event_info"
     },{
+        "title": "野兽骑行",
+        "id": "speedforce",
+        "url": "http://api.speedforce.com/api/v2.1/getRoutesByCityId",
+        "method": "POST",
+        "body_params": {"cityId": 131},
+        "value_path": "result",
+        "is_beta": 1
+    },{
         "title": "登陆注册",
         "id": "login",
         "view": "login",
