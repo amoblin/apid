@@ -338,6 +338,7 @@
             "subtitle": "Singer",
             "image": "Content.5:-8"
         },
+        "view": "media",
         "layout": "audio",
         "is_beta": 1
     }],
