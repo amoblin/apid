@@ -240,6 +240,11 @@
         "id": "meiqi",
         "url": "http://www.biketo.com/app.php?m=client&a=render&&classid=134&page=1&platform=1&pz=20&showType=newsList&time=0&version=1",
         "value_path": "list",
+        "content_mapping": {
+            "title": "title",
+            "image": ["http://www.biketo.com/%s", "titlepic.@0"],
+            "subtitle": "smalltext"
+        },
         "is_beta": 1
     },{
         "title": "登陆注册",
