@@ -99,6 +99,7 @@
         "priority": 1000,
         "icon": "http://img.d9soft.com/2015/0202/20150202114446555.png",
         "layout" : "app_store",
+        "view": "banner_tableview",
         "value_path" : "stories",
         "banner_value_path": "top_stories",
         "banner_layout": "default",
