@@ -42,7 +42,16 @@
 
         "priority": 1,
         "icon": "http://cdnzz.ifanr.com/wp-content/themes/ifanr-2.0/static/images/desktop/new-logo-gray.png",
-        "value_path": "data"
+        "value_path": "data",
+        "item_action": "ifanr_detail"
+    },{
+        "title": "爱范儿详情",
+        "id": "ifanr_detail",
+        "has_parent": 1,
+        "format": {
+            "url": ["%s", "link"]
+        },
+        "layout": "webpage"
     },{
         "title": "IT桔子",
         "url": "http://service.itjuzi.com/investevents/all",
