@@ -57,7 +57,8 @@
         "value" : "",
         "id" : "body_params",
         "name" : "Body Params",
-        "type" : "string"
+        "type" : "string",
+        "editable": 1
     },{
         "placeholder" : "请输入数据路径",
         "id" : "value_path",
