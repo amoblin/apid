@@ -10,6 +10,10 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 
 API data for API Debugger: <https://itunes.apple.com/us/app/api-debugger/id1069711788?l=zh&ls=1&mt=8>
 
+# APID用户交流微信群
+
+<img src="1.jpg" width="300" />
+
 # 添加API
 
 fork本仓库，然后向index.json中增加API数据，给amoblin发pull request，合并进本仓库后，API Debugger里就可以看到新的API啦~
