@@ -290,6 +290,17 @@
         },
         "is_beta": 1
     },{
+        "title": "美骑自行车",
+        "id": "meiqi_bike",
+        "url": "http://p.biketo.com/api/app/BrandBikes?brand_id=14&cate_id=0&start=0&num=100",
+        "value_path": "data.data",
+        "content_mapping": {
+            "title": "name",
+            "image": "photo",
+            "subtitle": "price"
+        },
+        "is_beta": 1
+    },{
         "title": "8264",
         "url": "http://mobile.8264.com/forum.php?mod=m_forumdisplay&fid=12&offset=0&size=50&orderby=lastpost",
         "id": "8264",
