@@ -1,0 +1,29 @@
+commit 9546752ae829ee78c3da0bdb4296cfec2af4096b
+Author: amoblin@mbp <amoblin@gmail.com>
+Date:   Sat Jan 2 18:41:41 2016 +0800
+
+    update index apis
+
+diff --git a/index.json b/index.json
+index 9b3693a..f626dbe 100644
+--- a/index.json
++++ b/index.json
+@@ -16,7 +16,7 @@
+         "title" : "花瓣网",
+         "id": "huaban_index",
+         "method" : "GET",
+-        "url" : "http://api.huaban.com/favorite/beauty",
++        "url" : "http://api.huaban.com/favorite",
+         "url_params" : "",
+         "body_type" : "",
+         "body_params" : "",
+@@ -165,9 +165,5 @@
+             "from_to": ["%s%s-%s%s", "startprovince", "startcity", "destprovince", "destcity"]
+         },
+         "value_path": "event_info"
+-    },{
+-        "title": "登陆注册",
+-        "id": "login",
+-        "view": "login"
+     }]
+ }
